@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Cream";
+  src: url("./assets/fonts/cream.ttf");
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Cream";
+}
+
+body {
+  position: absolute;
+  background-image: url("./assets/long-asphalt-road-cloudy-rainy-sky.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-position: center;
+  padding: 2.5rem;
+}
+
+
+.App{
+  box-sizing: border-box;
+}
+
+
+/* large screen */
+@media (min-width: 1283px) {
+  
+}
+
+/*for desktop*/
+@media (min-width: 1246px) and (max-width: 1281px) {
+}
+
+/*ipad and any device in potrait mode*/
+@media (min-width: 768px) and (max-width: 1282px) {
+ 
+}
+
+/*mobile and small ipad*/
+@media (min-width: 480px) and (max-width: 767px) {
+
+}
+
+/*small device*/
+@media (max-width: 480px) {
+ 
+}

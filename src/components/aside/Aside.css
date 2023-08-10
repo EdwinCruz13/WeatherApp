@@ -1,0 +1,126 @@
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2.5rem;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  height: 100%;
+  width: 330px;
+
+  background-color: #efedf352; /*quitar*/
+  backdrop-filter: blur(7px);
+  overflow: hidden;
+  box-shadow: inset -0.5px 0px 0px 1px #cdccd1e5;
+  transition: width 0.5s ease-out;
+}
+
+aside header {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  gap: 3rem;
+  width: 100%;
+  padding: 0.85rem 0;
+}
+
+
+
+/***********************************/
+/*themperature indicator section*/
+/***********************************/
+aside .temperature-description {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  font-size: 32px;
+  color: #fff;
+  text-shadow: 8px 5px #302b2b50;
+}
+
+/***********************************/
+/*weather description section*/
+/***********************************/
+.weather-description {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0.85rem;
+}
+.weather-description .detail {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 1px 1px #302b2b;
+}
+.weather-description .detail-info h4 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: lighter;
+  font-family: sans-serif;
+  text-shadow: 1px 0px #302b2b;
+}
+
+aside .temperature-forecast-byday {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: auto;
+
+  box-shadow: inset -0.3px 0px 0px 1px #cdccd193;
+  border-radius: 15px;
+  padding: 0.45rem;
+}
+
+aside .temperature-forecast-byday img {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+}
+
+
+aside .city-description h3{
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+  }
+
+aside .city-description p {
+  color: #fff;
+  font-style: normal;
+  font-weight: lighter;
+  font-family: sans-serif;
+  margin-top: 5px;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  text-align: justify;
+}
+
+/*for desktop*/
+@media (min-width: 1246px) and (max-width: 1281px) {
+}
+
+/*ipad and any device in potrait mode*/
+@media (min-width: 768px) and (max-width: 1282px) {
+}
+
+/*mobile and small ipad*/
+@media (min-width: 480px) and (max-width: 767px) {
+}
+
+/*small device*/
+@media (max-width: 480px) {
+}

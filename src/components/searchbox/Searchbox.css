@@ -1,0 +1,119 @@
+/***********************************/
+/*search section*/
+/***********************************/
+.search-section {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.search-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  padding: 0 0.55rem 0.15rem 0.55rem;
+  border-bottom: solid 1px #ffffffbb;
+  margin-bottom: 0.5rem;
+}
+
+.search-section .search-container i {
+  font-size: 18px;
+  color: #fff;
+}
+.search-section .search-container input {
+  padding-bottom: 0.25rem;
+  margin-left: 10px;
+  border: none;
+  background: none;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+}
+
+.search-section .search-container input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+  letter-spacing: 1.5px;
+}
+
+.search-section .search-container input:focus {
+  outline: none;
+}
+
+.search-list-hidden{
+    display: none;
+}
+.found-items-search {
+  position: absolute;
+  top: 90px;
+  left: 40px;
+  background-color: #fff;
+  width: 250px;
+  height: 150px;
+
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.15rem;
+  overflow-y: auto;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.search-list-hidden{
+    display: none;
+}
+
+.found-items-search::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.found-items-search::-webkit-scrollbar:vertical,
+.found-items-search::-webkit-scrollbar:horizontal {
+  width: 5px;
+}
+
+.found-items-search::-webkit-scrollbar-thumb {
+  background-color: #ac7b7b;
+  border-radius: 5px;
+  border: 2px solid #f1f2f3;
+}
+
+.found-items-search::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+.found-items-search li {
+  width: 100%;
+  padding: 0.25rem;
+  color:#000;
+  transition: all 0.1s ease-out;
+}
+
+.found-items-search li:hover {
+  background-color: #439ccf;
+  color:#fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/*for desktop*/
+@media (min-width: 1246px) and (max-width: 1281px) {
+}
+
+/*ipad and any device in potrait mode*/
+@media (min-width: 768px) and (max-width: 1282px) {
+}
+
+/*mobile and small ipad*/
+@media (min-width: 480px) and (max-width: 767px) {
+}
+
+/*small device*/
+@media (max-width: 480px) {
+}
