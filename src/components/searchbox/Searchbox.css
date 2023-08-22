@@ -55,13 +55,13 @@
   left: 40px;
   background-color: #fff;
   width: 250px;
-  height: 150px;
+  height: 180px;
 
-  display: flex;
-  flex-flow: row wrap;
-  gap: 0.15rem;
+  display: inline-block;
+  text-align: justify;
+  
   overflow-y: auto;
-  border-radius: 5px;
+  border-radius: 3px;
   z-index: 1;
 }
 
@@ -89,9 +89,13 @@
 }
 
 .found-items-search li {
+  display: block;
   width: 100%;
+  height: auto;
+
   padding: 0.25rem;
   color:#000;
+  font-size: 12px;
   transition: all 0.1s ease-out;
 }
 
@@ -100,6 +104,22 @@
   color:#fff;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+}
+
+
+.fa-spinner{
+  animation-duration: 1s;
+  animation-name: getpin;
+  animation-iteration-count: infinite;
+}
+
+.hidden{
+  display: none;
+}
+
+@keyframes getpin {
+    from { transform: rotate(0deg)}
+    to { transform: rotate(360deg)}
 }
 
 /*for desktop*/
