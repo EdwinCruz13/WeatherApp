@@ -71,18 +71,18 @@ export const Home = () => {
                       width: "100%",
                     }}
                   >
-                    {temperatureC > 30 && (
+                    {temperatureC >= 30 && (
                       <div className="line-temp line-temp-hot"></div>
                     )}
 
-                    {temperatureC > 21 && temperatureC < 30 && (
+                    {temperatureC >= 21 && temperatureC < 30 && (
                       <div className="line-temp line-temp-cool"></div>
                     )}
 
                     {temperatureC > 0 && temperatureC < 21 && (
                       <div className="line-temp line-temp-cold"></div>
                     )}
-                    {temperatureC < 0 && (
+                    {temperatureC <= 0 && (
                       <div className="line-temp line-temp-freeze"></div>
                     )}
                   </div>
